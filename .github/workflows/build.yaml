@@ -30,6 +30,6 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: "ghcr.io/${{ github.actor }}/terraform:${{ env.GIT_TAG }}"
+          tags: "ghcr.io/${{ github.actor }}/terraform/terraform:${{ env.GIT_TAG }}"
           build-args: |
             IMAGE_TAG=${{ env.GIT_TAG }}
